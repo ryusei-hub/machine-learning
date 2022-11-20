@@ -60,6 +60,8 @@ def get_rule_antecedent_value(ant1: FuzzySet, val1: float, ant2: FuzzySet, val2:
 		result = get_conjunction(first, second)
 	elif operator == 'OR':
 		result = get_disjunction(first, second)
+	else:
+		return first
 	return result
 
 
